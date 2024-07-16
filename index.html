@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page de Automação de Vendas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="#" class="logo">AutomateSales</a>
+                <ul class="nav-links">
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#pricing">Preços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Transforme Suas Vendas com Automação</h1>
+                <p>Automatize suas vendas e aumente sua eficiência com nossa solução de automação de vendas.</p>
+                <a href="#contact" class="cta-button">Saiba Mais</a>
+            </div>
+        </section>
+    </header>
+    
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Características</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="icon">🔄</div>
+                    <h3>Automação Completa</h3>
+                    <p>Automatize tarefas repetitivas e foque no que realmente importa.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">📊</div>
+                    <h3>Relatórios Detalhados</h3>
+                    <p>Obtenha insights valiosos e tome decisões informadas com relatórios detalhados.</p>
+                </div>
+                <div class="feature">
+                    <div class="icon">🔗</div>
+                    <h3>Integração Fácil</h3>
+                    <p>Integre com suas ferramentas existentes de forma rápida e fácil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Preços</h2>
+            <div class="pricing-table">
+                <!-- Plano Básico -->
+                <div class="pricing-card basic-plan">
+                    <h3>Básico</h3>
+                    <p class="price">R$99/mês</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">🛠️</div>
+                            <div class="feature-text">Automação Básica</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📧</div>
+                            <div class="feature-text">Suporte por Email</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📈</div>
+                            <div class="feature-text">Relatórios Simples</div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="cta-button">Assine Agora</a>
+                </div>
+    
+                <!-- Plano Profissional -->
+                <div class="pricing-card professional-plan">
+                    <h3>Profissional</h3>
+                    <p class="price">R$199/mês</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">🔧</div>
+                            <div class="feature-text">Automação Avançada</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📞</div>
+                            <div class="feature-text">Suporte Prioritário</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📊</div>
+                            <div class="feature-text">Relatórios Avançados</div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="cta-button">Assine Agora</a>
+                </div>
+    
+                <!-- Plano Empresarial -->
+                <div class="pricing-card enterprise-plan">
+                    <h3>Empresarial</h3>
+                    <p class="price">R$299/mês</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">⚙️</div>
+                            <div class="feature-text">Automação Completa</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌐</div>
+                            <div class="feature-text">Suporte 24/7</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📋</div>
+                            <div class="feature-text">Relatórios Personalizados</div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="cta-button">Assine Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Interessado em saber mais? Preencha o formulário abaixo e nossa equipe entrará em contato com você.</p>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit" class="cta-button">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AutomateSales. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<style>
+    /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Corpo */
+body {
+    background-color: #f5f7f9;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho e navegação */
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #004d7a;
+    color: #fff;
+    padding: 1.2em 0;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2.4em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5em;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+    transform: translateY(-2px);
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(to right, rgba(0, 45, 103, 0.8), rgba(0, 45, 103, 0.6)), url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 10em 0;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 45, 103, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 5em;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    font-weight: 700;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.6em;
+    margin-bottom: 2em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    background-color: #00aaff;
+    color: #fff;
+    padding: 1.2em 3em;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.3em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0086d1;
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+/* Seções de Características e Preços */
+.features, .pricing, .contact {
+    padding: 8em 0;
+    background-color: #fff;
+}
+
+.features h2, .pricing h2, .contact h2 {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    color: #004d7a;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1em;
+    display: inline-block;
+}
+
+.features h2:before, .pricing h2:before, .contact h2:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60%;
+    height: 5px;
+    background: #00aaff;
+    transform: translateX(-50%);
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.5em;
+}
+
+.feature {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2.5em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    min-width: 280px;
+    position: relative;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    font-size: 3.5em;
+    margin-bottom: 1.5em;
+    color: #00aaff;
+    transition: color 0.3s ease;
+}
+
+.feature:hover .icon {
+    color: #004d7a;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.pricing-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    padding: 2.5em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    min-width: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card .price {
+    font-size: 3em;
+    margin: 0.5em 0;
+    color: #00aaff;
+    font-weight: 700;
+    border-bottom: 2px solid #00aaff; /* Linha inferior */
+    padding-bottom: 0.5em;
+}
+
+.pricing-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200%;
+    height: 12px;
+    background: linear-gradient(90deg, rgba(0, 77, 122, 0.2), transparent);
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
+}
+
+.pricing-card:hover:before {
+    opacity: 0;
+}
+
+/* Adicione isso ao seu CSS existente */
+
+/* Estilização do formulário */
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 3em;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha o conteúdo ao centro */
+}
+
+/* Estilização dos inputs e textarea */
+form input, form textarea {
+    width: 100%;
+    padding: 1.2em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilização do botão */
+form button {
+    background-color: #00aaff;
+    color: #fff;
+    padding: 1.2em 2.5em; /* Ajusta o padding para o botão */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1em; /* Adiciona margem superior para o botão */
+}
+
+form button:hover {
+    background-color: #0086d1;
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #004d7a;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Animações e efeitos suaves */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-out;
+}
+
+</style>
+
+<script>
+    /* Suaviza o scroll para seções ao clicar nos links de navegação */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
