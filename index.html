@@ -147,7 +147,7 @@
 </html>
 
 <style>
-    /* Reset básico */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -390,8 +390,6 @@ nav {
     opacity: 0;
 }
 
-/* Adicione isso ao seu CSS existente */
-
 /* Estilização do formulário */
 form {
     max-width: 700px;
@@ -416,6 +414,12 @@ form input, form textarea {
     transition: border-color 0.3s ease;
 }
 
+form input:focus, form textarea:focus {
+    border-color: #00aaff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.5);
+}
+
 /* Estilização do botão */
 form button {
     background-color: #00aaff;
@@ -435,7 +439,6 @@ form button:hover {
     transform: translateY(-5px);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
 }
-
 
 /* Rodapé */
 footer {
@@ -458,6 +461,111 @@ footer {
 
 body {
     animation: fadeIn 1s ease-out;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas menores que 768px (tablets e celulares em paisagem) */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 0.8em 2em;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        max-width: 300px;
+    }
+
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        max-width: 300px;
+        margin: 1em 0;
+    }
+
+    form {
+        padding: 2em;
+    }
+
+    form input, form textarea {
+        padding: 1em;
+    }
+
+    form button {
+        font-size: 1em;
+        padding: 1em 2em;
+    }
+}
+
+/* Telas menores que 480px (celulares em retrato) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .nav-links {
+        font-size: 0.9em;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 0.8em 1.5em;
+    }
+
+    .feature {
+        padding: 1.5em;
+    }
+
+    .pricing-card {
+        padding: 1.5em;
+    }
+
+    form {
+        padding: 1.5em;
+    }
+
+    form input, form textarea {
+        padding: 0.8em;
+    }
+
+    form button {
+        font-size: 1em;
+        padding: 0.8em 1.5em;
+    }
 }
 
 </style>
